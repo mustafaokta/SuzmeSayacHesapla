@@ -1,0 +1,2 @@
+suzme, saat, sayac, elektrik, su, süzme, sayaç, fatura, hesap, hesaplama
+Elektrik su süzme sayaç fatura tüketim saat bedelini hesaplar, kaydeder.

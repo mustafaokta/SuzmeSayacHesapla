@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FaturaActivity"
+    android:padding="16dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sayacTanimlamasi"
+            android:inputType="text"
+            android:hint="@string/saya_ismi_veriniz_rnek_depo_ek_bina" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/faturaToplamTutar"
+            android:inputType="numberDecimal"
+            android:hint="@string/ana_sayaca_gelen_fatura_tutar_n_giriniz" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/faturaSayacIlkEndeks"
+            android:inputType="numberDecimal"
+            android:hint="@string/ana_fatura_saya_lk_endeks_de_eri_tek_zaman" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/faturaSayacSonEndeks"
+            android:inputType="numberDecimal"
+            android:hint="@string/ana_fatura_saya_son_endeks_de_eri_tek_zaman" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:id="@+id/suzmeSayacIlkEndeks"
+            android:hint="@string/s_zme_saya_ge_en_ay_t_de_eri"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/suzmeSayacSonEndeks"
+            android:inputType="numberDecimal"
+            android:hint="@string/s_zme_saya_bu_ay_t_de_eri" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kaydet"
+        android:id="@+id/kaydet"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/uyari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="@string/ana_saya_saati_faturas_kar_ld_ayn_g_n_s_zme_sayac_t_de_erini_not_foto_al_n_z"
+        android:textAlignment="center"
+        android:textColor="#530404"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp">
+
+        <TextView
+            android:id="@+id/suzmeSayacHesaplananFaturaPayi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/s_zme_saya_tutar"
+
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+</LinearLayout>
