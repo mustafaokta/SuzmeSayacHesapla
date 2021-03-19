@@ -36,6 +36,12 @@ public class MainActivity extends AppCompatActivity implements ItemClickListener
         initFab();
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        finish();
+    }
+
     private void initFab() {
         fab=findViewById(R.id.fabButonum);
         fab.setOnClickListener(new View.OnClickListener() {

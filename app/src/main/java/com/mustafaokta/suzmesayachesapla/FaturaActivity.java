@@ -40,6 +40,12 @@ public class FaturaActivity extends AppCompatActivity {
         initDb();
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        finish();
+    }
+
     private void initDb() {
         DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(this, "fa-db");
         Database db = helper.getWritableDb();

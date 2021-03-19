@@ -8,7 +8,7 @@ import org.greenrobot.greendao.annotation.Generated;
 
 
 
-@Entity
+@Entity(generateGettersSetters = false)
 public class Fatura {
     @Id(autoincrement = true)
     private Long id;
@@ -110,8 +110,7 @@ public class Fatura {
             Integer suzmeSayacHesaplananFaturaPayi) {
         this.suzmeSayacHesaplananFaturaPayi = suzmeSayacHesaplananFaturaPayi;
     }
-
-   
+ 
 
 
 }

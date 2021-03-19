@@ -14,6 +14,9 @@ import com.mustafaokta.suzmesayachesapla.db.FaturaDao;
 
 import org.greenrobot.greendao.database.Database;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class DetailActivity extends AppCompatActivity {
         private TextView sayacTanimlamasiDtyBind, faturaToplamTutarDtyBind, faturaSayacIlkEndeksDtyBind,
                 faturaSayacSonEndeksDtyBind, suzmeSayacIlkEndeksDtyBind, suzmeSayacSonEndeksDtyBind, suzmeSayacHesaplananFaturaPayiDtyBind,  kayitOlusturmaTarihiDtyBind;
@@ -28,6 +31,12 @@ public class DetailActivity extends AppCompatActivity {
         parseIntent();
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        finish();
+    }
+
     private void parseIntent() {
         Intent intent=getIntent();
         Long faturaId=intent.getLongExtra("fatura-id",-1);
@@ -37,13 +46,14 @@ public class DetailActivity extends AppCompatActivity {
 
     private void showFaturaDetails(Fatura fatura) {
         sayacTanimlamasiDtyBind.setText(fatura.getSayacTanimlamasi());
-        faturaToplamTutarDtyBind.setText(fatura.getFaturaToplamTutar().toString());
+        faturaToplamTutarDtyBind.setText(fatura.getFaturaToplamTutar().toString()+" TL");
         faturaSayacIlkEndeksDtyBind.setText(fatura.getFaturaSayacIlkEndeks().toString());
         faturaSayacSonEndeksDtyBind.setText(fatura.getFaturaSayacSonEndeks().toString());
         suzmeSayacIlkEndeksDtyBind.setText(fatura.getSuzmeSayacIlkEndeks().toString());
         suzmeSayacSonEndeksDtyBind.setText(fatura.getSuzmeSayacSonEndeks().toString());
-        suzmeSayacHesaplananFaturaPayiDtyBind.setText(fatura.getSuzmeSayacHesaplananFaturaPayi().toString());
-        kayitOlusturmaTarihiDtyBind.setText(fatura.getFaturaOkunmaTarihi().toString());
+        suzmeSayacHesaplananFaturaPayiDtyBind.setText(fatura.getSuzmeSayacHesaplananFaturaPayi().toString()+" TL");
+        String date = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
+        kayitOlusturmaTarihiDtyBind.setText(date);
 
     }
 

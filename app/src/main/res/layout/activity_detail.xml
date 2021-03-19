@@ -15,14 +15,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/saya_tan_m"
-            android:textColor="#2E0101">
+            android:textColor="#000000"
+            android:textSize="16sp"
+            >
         </TextView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:id="@+id/sayacTanimlamasiDty"
-            android:textColor="#051137">
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:gravity="left">
         </TextView>
     </TableRow>
 
@@ -34,14 +38,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/ana_fatura_tutar"
-            android:textColor="#2E0101">
+            android:textColor="#000000"
+            android:textSize="20sp">
         </TextView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:textColor="#051137"
-            android:id="@+id/faturaToplamTutarDty">
+            android:textColor="#000000"
+            android:id="@+id/faturaToplamTutarDty"
+            android:textSize="20sp">
         </TextView>
     </TableRow>
 
@@ -53,14 +59,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/ana_saya_lk_endeks"
-            android:textColor="#2E0101">
+            android:textColor="#000000"
+            android:textSize="16sp">
         </TextView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:textColor="#051137"
-            android:id="@+id/faturaSayacIlkEndeksDty">
+            android:textColor="#000000"
+            android:id="@+id/faturaSayacIlkEndeksDty"
+            android:textSize="16sp">
         </TextView>
     </TableRow>
 
@@ -71,15 +79,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#2E0101"
-            android:text="@string/ana_saya_son_endeks">
+            android:textColor="#000000"
+            android:text="@string/ana_saya_son_endeks"
+            android:textSize="16sp">
         </TextView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:textColor="#051137"
-            android:id="@+id/faturaSayacSonEndeksDty">
+            android:textColor="#000000"
+            android:id="@+id/faturaSayacSonEndeksDty"
+            android:textSize="16sp">
         </TextView>
     </TableRow>
 
@@ -90,15 +100,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#2E0101"
-            android:text="@string/s_zme_saya_eski_t_de_eri">
+            android:textColor="#000000"
+            android:text="@string/s_zme_saya_eski_t_de_eri"
+            android:textSize="16sp">
         </TextView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:textColor="#051137"
-            android:id="@+id/suzmeSayacIlkEndeksDty">
+            android:textColor="#000000"
+            android:id="@+id/suzmeSayacIlkEndeksDty"
+            android:textSize="16sp">
         </TextView>
     </TableRow>
 
@@ -109,15 +121,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#2E0101"
-            android:text="@string/s_zme_saya_yeni_t_de_eri">
+            android:textColor="#000000"
+            android:text="@string/s_zme_saya_yeni_t_de_eri"
+            android:textSize="16sp">
         </TextView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:textColor="#051137"
-            android:id="@+id/suzmeSayacSonEndeksDty">
+            android:textColor="#000000"
+            android:id="@+id/suzmeSayacSonEndeksDty"
+            android:textSize="16sp">
         </TextView>
     </TableRow>
 
@@ -128,15 +142,17 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#2E0101"
-        android:text="@string/kay_t_olu_turma_tarihi">
+        android:textColor="#000000"
+        android:text="@string/kay_t_olu_turma_tarihi"
+        android:textSize="16sp">
     </TextView>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:textColor="#051137"
-        android:id="@+id/kayitOlusturmaTarihi">
+        android:textColor="#000000"
+        android:id="@+id/kayitOlusturmaTarihi"
+        android:textSize="16sp">
     </TextView>
     </TableRow>
     <TableRow
@@ -146,15 +162,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#2E0101"
-            android:text="@string/s_zme_saya_fatura_tutar">
+            android:textColor="#000000"
+            android:text="Süzme Sayaç Payı"
+            android:textSize="28sp">
         </TextView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:textColor="#051137"
-            android:id="@+id/suzmeSayacHesaplananFaturaPayiDty">
+            android:textColor="#000000"
+            android:id="@+id/suzmeSayacHesaplananFaturaPayiDty"
+            android:textSize="28sp">
         </TextView>
 
     </TableRow>
